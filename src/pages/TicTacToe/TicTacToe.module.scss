@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.game {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #4cc9f0;
+  border-radius: 15px;
+}
+
+.square {
+  background: rgb(246, 189, 189);
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 4rem;
+}
+
+.square:hover {
+  background: #f7cacd;
+}
+
+// .square.clicked {
+//   background: rgb(255, 0, 0);
+//   cursor: not-allowed;
+// }
+
+.square-clicked {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbf3e4;
+}
+
+.app {
+  height: auto;
+  margin-top: 2px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 5px;
+  padding: 5px;
+  border: 2px solid rgb(246 189 189);
+}
+
+.end-game-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  height: 91.5vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.btn {
+  background: rgb(0, 0, 0);
+  color: rgb(208, 213, 255);
+  border: 2px solid rgb(214, 235, 255);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease-out;
+  max-height: 7rem;
+}
+
+.btn:hover {
+  background: rgb(63, 118, 170);
+  color: rgb(27, 255, 255);
+  border: 2px solid rgb(27, 255, 255);
+}
+
+.win-text {
+  color: white;
+  font-size: 5rem;
+}
+
+.win-history {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.win-history-end {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.turn {
+  font-weight: 600;
+  color: black;
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
